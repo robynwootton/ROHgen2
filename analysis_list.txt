@@ -1,0 +1,27 @@
+ANALYSIS_ID			DEPENDENT		COVARIATES							CONFOUNDERS		RN_TRANSFORM_RESIDUALS
+analysis_1_height		height			"age + STD"						"edu"			FALSE
+analysis_2_bmi			bmi			"age + age^2 + STD"					"edu + height"		TRUE
+analysis_3_weight		weight			"age + STD"						"edu + height"		TRUE
+analysis_4_whr			whr			"age + age^2 + bmi + STD"					"edu + height"		TRUE
+analysis_5_birth_weight		birth_weight		"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		TRUE
+analysis_6_ldl			ldl			"age + age^2 + STD"					"edu + height"		FALSE
+analysis_7_hdl			hdl			"age + age^2 + STD"					"edu + height"		FALSE
+analysis_8_tot_chol		tot_chol		"age + age^2 + STD"					"edu + height"		FALSE
+analysis_9_log.triglyc		log(triglyc)		"age + age^2 + STD"					"edu + height"		FALSE
+analysis_10_bp_sys		bp_sys			"age + age^2 + bmi + STD"					"edu + height"		FALSE
+analysis_11_bp_dia		bp_dia			"age + age^2 + bmi + STD"					"edu + height"		FALSE
+analysis_12_fpg			fpg			"age + age^2 + bmi + STD"					"edu + height"		FALSE
+analysis_13_log.fast_ins	log(fast_ins)		"age + age^2 + bmi + STD"					"edu + height"		FALSE
+analysis_14_edu			edu			"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"height"		FALSE
+analysis_15_hb			hb			"age + STD"						"edu + height"		FALSE
+analysis_16_log.hscrp		log(hscrp)		"age + STD"						"edu + height"		FALSE
+analysis_17_log.egfr		log(egfr)		"age + age^2 + STD"					"edu + height"		FALSE
+analysis_18_hr			hr			"age + age^2 + bmi + STD"					"edu + height"		FALSE
+analysis_19_neb			neb			"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_20_neb_women		neb_women		"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_21_neb_parous		neb_parous		"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_22_afb			afb			"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_23_afb_women		afb_women		"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_24_age_menopause	age_menopause		"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_25_age_menarche	age_menarche		"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
+analysis_26_parity		parity			"(yob-1950) + (yob-1950)^2 + (yob-1950)^3 + STD"		"edu + height"		FALSE
